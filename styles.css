@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 280px 1fr;
+    grid-template-rows: 0.15fr 1fr;
+}
+
+.dashboard-header {
+    background-color: #f9fafb;
+}
+
+.navbar {
+    grid-row: 1 / 3;
+    background-color: #0f172a;
+}
+
+.main-container {
+    background-color: #e5e7eb;
+}
