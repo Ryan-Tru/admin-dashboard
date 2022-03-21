@@ -19,11 +19,59 @@ body {
     display: grid;
     height: 100vh;
     grid-template-columns: 280px 1fr;
-    grid-template-rows: 0.15fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
 }
 
+/* Styling header and children */
 .dashboard-header {
     background-color: var(--almost-white);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+
+/* Styling Searchbar */
+
+.searchbar-container {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+#searchbar {
+    border: none;
+    background-color: #eeeeee;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 0.4rem 0.5rem;
+    width: 25rem;
+}
+
+/* Styling side profile */
+
+.side-profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.side-profile-avatar {
+    height: 65px;
+    border-radius: 50%;
+    background-color: var(--logo-purple);
+    cursor: pointer;
+}
+
+.side-profile-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.notification-icon {
+    margin-right: 50px;
+    cursor: pointer;
 }
 
 /* Styling navbar and children */
@@ -60,8 +108,60 @@ body {
     color: var(--light-grey);
 }
 
-
-
+/* Styling main container and children */
 .main-container {
+    display: grid;
     background-color: #e5e7eb;
+    grid-template-columns: 1fr 0.3fr;
+    padding: 2rem 2rem;
+}
+
+/* Styling projects container- */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px;
+}
+
+.project-card {
+    width: 450px;
+    background-color: white;
+    height: 220px;
+    border-radius: 10px;
+    border-left: 10px solid var(--logo-purple);
+    padding: 1.7rem 1rem;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    border-left: 14px solid var(--logo-purple);
+}
+
+.project-heading {
+    grid-column: 1 / 3;
+}
+
+/* Styling announcements */
+.announcement-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.announcement-heading {
+    height: 40px;
+}
+
+.announcement-card {
+    background-color: white;
+    width: 250px;
+    height: 726px;
+    padding: 0.7rem 1rem 1.7rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.annoucements {
+    margin-top: 1rem;
 }
